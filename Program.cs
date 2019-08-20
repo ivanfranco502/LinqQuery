@@ -1,4 +1,5 @@
 ﻿using System;
+using LinqQuery.DataSets;
 
 namespace LinqQuery
 {
@@ -6,7 +7,7 @@ namespace LinqQuery
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Process.ProcessBusinessLineLinq(DataSetBusinessLine.Get(), Process.GetMapper());
         }
     }
 }
